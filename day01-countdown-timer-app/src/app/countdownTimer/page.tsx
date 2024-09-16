@@ -86,7 +86,7 @@ export default function CountdownTimer() {
   return (
     <>
       <div className="flex h-screen w-screen flex-col items-center justify-center bg-slate-800 p-4 sm:p-6 lg:p-10 gap-6">
-        <div className="h-2/4 w-full sm:w-3/4 md:w-2/3 lg:w-1/2 bg-white rounded-3xl p-6 md:p-8">
+        <div className="h-3/4 w-full sm:w-3/4 md:w-2/3 lg:w-1/2 bg-white rounded-3xl p-6 md:p-8">
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mt-2">
             Countdown Timer
           </h1>
