@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -85,47 +85,49 @@ export default function CountdownTimer() {
 
   return (
     <>
-      <div className="flex h-screen w-screen flex-col items-center justify-center bg-slate-800 gap-6">
-        <div className="h-2/4 w-1/2 bg-white rounded-3xl">
-          <h1 className="text-4xl from-neutral-900 font-bold text-center mt-2">Countdown Timer</h1>
-          <div className="flex justify-center gap-6 mt-10">
+      <div className="flex h-screen w-screen flex-col items-center justify-center bg-slate-800 p-4 sm:p-6 lg:p-10 gap-6">
+        <div className="h-2/4 w-full sm:w-3/4 md:w-2/3 lg:w-1/2 bg-white rounded-3xl p-6 md:p-8">
+          <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mt-2">
+            Countdown Timer
+          </h1>
+          <div className="flex flex-col sm:flex-row justify-center gap-6 mt-10">
             <Input
               onChange={handleDurationChange}
               id="duration"
               type="number"
-              className="h-8 w-80 text-black"
+              className="h-10 w-full sm:w-64 text-black"
               placeholder="Enter duration in seconds"
             />
             <Button
               onClick={handleSetButton}
               variant="outline"
-              className="h-8 w-20 rounded-xl border-2 border-slate-800 hover:bg-slate-800 hover:text-white"
+              className="h-10 w-full sm:w-32 rounded-xl border-2 border-slate-800 hover:bg-slate-800 hover:text-white"
             >
               Set
             </Button>
           </div>
-          <div className="flex justify-center mt-10 font-extrabold text-5xl">
+          <div className="flex justify-center mt-10 font-extrabold text-4xl sm:text-5xl lg:text-6xl">
             {formatTime(leftTime)}
           </div>
-          <div className="flex justify-center gap-6 mt-10">
+          <div className="flex justify-center gap-6 mt-10 flex-wrap">
             <Button
               onClick={handleStartButton}
               variant="outline"
-              className="h-8 w-20 bg-white rounded-xl border-2 border-slate-800 hover:bg-slate-800 hover:text-white"
+              className="h-10 w-24 bg-white rounded-xl border-2 border-slate-800 hover:bg-slate-800 hover:text-white"
             >
               {isPausedTimer ? "Resume" : "Start"}
             </Button>
             <Button
               onClick={handlePauseButton}
               variant="outline"
-              className="h-8 w-20 bg-white rounded-xl border-2 border-slate-800 hover:bg-slate-800 hover:text-white"
+              className="h-10 w-24 bg-white rounded-xl border-2 border-slate-800 hover:bg-slate-800 hover:text-white"
             >
               Pause
             </Button>
             <Button
               onClick={handleResetButton}
               variant="outline"
-              className="h-8 w-20 bg-white rounded-xl border-2 border-slate-800 hover:bg-slate-800 hover:text-white"
+              className="h-10 w-24 bg-white rounded-xl border-2 border-slate-800 hover:bg-slate-800 hover:text-white"
             >
               Reset
             </Button>
