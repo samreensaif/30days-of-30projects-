@@ -1,3 +1,33 @@
+Countdown Timer App
+A simple Countdown Timer application built with Next.js, TypeScript, and Tailwind CSS. This app allows users to set a timer, start, pause, reset, and resume it with a clean and responsive UI.
+
+Features
+Set a countdown duration in seconds.
+Start and pause the timer at any point.
+Reset the timer to the initial value.
+Responsive and user-friendly interface built with Tailwind CSS.
+Demo
+You can check out a live demo of the project here. (Add a link once deployed)
+
+Components
+CountdownTimer: Core component that handles the timer's logic and UI rendering.
+Button: Reusable button component styled using Tailwind CSS.
+Input: Reusable input component for capturing the timer's duration.
+Usage
+Enter the duration for the countdown in seconds.
+Click the Set button to initialize the timer.
+Use the Start, Pause, and Reset buttons to control the timer.
+Built With
+Next.js - A React framework for server-side rendering.
+TypeScript - A typed superset of JavaScript.
+Tailwind CSS - A utility-first CSS framework for designing UI components quickly.
+
+
+
+
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
